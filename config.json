@@ -1,0 +1,31 @@
+{
+	"MYSQL_DATABASE_HOST": "localhost",
+	"MYSQL_DATABASE_PORT": "3306",
+	"MYSQL_DATABASE_USER": "root",
+	"MYSQL_DATABASE_PASSWORD": "@froLogix2390",
+	"MYSQL_DATABASE_NAME": "mfinances",
+	"MYSQL_DATABASE_TABLE_NAME": "mfl_company",
+	"NUMBER_OF_ROWS": 1000000,
+	"COLUMNS": [
+		{
+			"NAME": "id",
+			"TYPE": "UNIQUE_ID",
+			"MAX_LENGTH": 11,
+			"MIN_LENGTH": 5,
+			"ALLOWED_VALUES": []
+		},
+		{
+			"NAME": "name",
+			"TYPE": "NAME"
+		},
+		{
+			"NAME": "enable",
+			"TYPE": "BIT"
+		},
+		{
+			"NAME": "slug",
+			"TYPE": "WORD",
+			"UNIQUE": true
+		}
+	]
+}
