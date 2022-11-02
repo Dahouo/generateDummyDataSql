@@ -2,17 +2,14 @@
 	"MYSQL_DATABASE_HOST": "localhost",
 	"MYSQL_DATABASE_PORT": "3306",
 	"MYSQL_DATABASE_USER": "root",
-	"MYSQL_DATABASE_PASSWORD": "@froLogix2390",
-	"MYSQL_DATABASE_NAME": "mfinances",
-	"MYSQL_DATABASE_TABLE_NAME": "mfl_company",
-	"NUMBER_OF_ROWS": 1000000,
+	"MYSQL_DATABASE_PASSWORD": "root",
+	"MYSQL_DATABASE_NAME": "test",
+	"MYSQL_DATABASE_TABLE_NAME": "test",
+	"NUMBER_OF_ROWS": 10,
 	"COLUMNS": [
 		{
 			"NAME": "id",
-			"TYPE": "UNIQUE_ID",
-			"MAX_LENGTH": 11,
-			"MIN_LENGTH": 5,
-			"ALLOWED_VALUES": []
+			"TYPE": "UNIQUE_ID"
 		},
 		{
 			"NAME": "name",
@@ -25,7 +22,14 @@
 		{
 			"NAME": "slug",
 			"TYPE": "WORD",
-			"UNIQUE": true
+			"UNIQUE": true,
+			"MAX_LENGTH": 11,
+			"MIN_LENGTH": 5
+		},
+		{
+			"NAME": "clientType",
+			"TYPE": "ENUM",
+			"ALLOWED_VALUES": ["ADMIN", "USER"]
 		}
 	]
 }
