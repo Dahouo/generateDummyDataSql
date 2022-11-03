@@ -1,10 +1,10 @@
 {
 	"MYSQL_DATABASE_HOST": "localhost",
 	"MYSQL_DATABASE_PORT": "3306",
-	"MYSQL_DATABASE_USER": "root",
-	"MYSQL_DATABASE_PASSWORD": "root",
-	"MYSQL_DATABASE_NAME": "test",
-	"MYSQL_DATABASE_TABLE_NAME": "test",
+	"MYSQL_DATABASE_USER": "",
+	"MYSQL_DATABASE_PASSWORD": "",
+	"MYSQL_DATABASE_NAME": "",
+	"MYSQL_DATABASE_TABLE_NAME": "",
 	"NUMBER_OF_ROWS": 10,
 	"COLUMNS": [
 		{
@@ -23,7 +23,7 @@
 			"NAME": "slug",
 			"TYPE": "WORD",
 			"UNIQUE": true,
-			"MAX_LENGTH": 11,
+			"MAX_LENGTH": 10,
 			"MIN_LENGTH": 5
 		},
 		{
