@@ -39,7 +39,7 @@ Following types are supported:
 * TEXT
 * NUMBER
 * AMOUNT
-* CURRNCY_CODE
+* CURRENCY_CODE
 * ALPHA_NUMERIC
 * UUID
 * UUID_WITHOUT_HYPHEN
@@ -77,7 +77,7 @@ Following types are supported:
     {
       "NAME": "role",
       "TYPE": "ENUM",
-      "ALLOWED_VALUES": [ADMIN, USER]
+      "ALLOWED_VALUES": ["ADMIN", "USER"]
     }
 ```
 
