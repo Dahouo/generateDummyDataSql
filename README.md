@@ -27,6 +27,28 @@ Following properties are available for each column description:
 * "UNIQUE": If the column should be unique
 * "ALLOWED_VALUES": The allowed values for the column if the column is of type `ENUM`
 
+Following types are supported:
+* NAME
+* PHONE
+* EMAIL
+* ADDRESS
+* POSTAL_CODE
+* REGION
+* COUNTRY
+* WORD
+* TEXT
+* NUMBER
+* AMOUNT
+* CURRNCY_CODE
+* ALPHA_NUMERIC
+* UUID
+* UUID_WITHOUT_HYPHEN
+* DATE
+* DATE_TIME
+* BOOLEAN
+* ENUM
+* BIT
+* UNIQUE_ID
 
 ### Config Example
 ```json
