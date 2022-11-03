@@ -1,8 +1,8 @@
 import random
+from faker import Faker
 
 
 def generate(data_type):
-    from faker import Faker
     fake = Faker()
 
     datatype_dict = {
