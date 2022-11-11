@@ -23,12 +23,14 @@ def generate_data():
         writer.writerow(columns_str)
         for i in range(config.get("NUMBER_OF_ROWS")):
             writer.writerow(build_values(columns))
-    connection = pymysql.connect(host=config.get("MMYSQL_DATABASE_HOST"),
+    connection = pymysql.connect(host=config.get("MYSQL_DATABASE_HOST"),
                                  user=config.get("MYSQL_DATABASE_USER"),
                                  password=config.get("MYSQL_DATABASE_PASSWORD"),
                                  db=config.get("MYSQL_DATABASE_NAME"),
                                  charset='utf8mb4',
-                                 cursorclass=pymysql.cursors.DictCursor)
+                                 cursorclass=pymysql.cursors.DictCursor,
+                                 local_infile=True,
+                                 ssl={"fake_flag_to_enable_tls": True})
 
     try:
         with connection.cursor() as cursor:
